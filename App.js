@@ -3,7 +3,7 @@ import React, {useEffect, useState} from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import io from 'socket.io-client'
 
-const socket = io('http://09aa1d0dfe0b.ngrok.io');
+const socket = io('https://1bfb5f4e01c6.ngrok.io');
 
 export default function App() {
   const [time, setTime] = useState("no data");
@@ -38,6 +38,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   text: {
-    fontSize: 24
+    fontSize: 30
   }
 });
